@@ -144,8 +144,7 @@ export const main = async (): Promise<void> => {
               };
 
               return [...promises, action(client, options)];
-            }, [] as Promise<unknown>[])
-          ).catch((error: Error) => {
+            }, [] as Promise<unknown>[])          ).catch((error: Error) => {
             debug('We found an error calling GitHub:', error);
             throw error;
           });
