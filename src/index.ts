@@ -140,7 +140,7 @@ export const main = async (): Promise<void> => {
                 rules,
                 sha: headSha,
                 base: baseSha,
-                files,
+                files || [],
               };
 
               return [...promises, action(client, options)];
