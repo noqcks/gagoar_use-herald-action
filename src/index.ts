@@ -105,7 +105,7 @@ export const main = async (): Promise<void> => {
       const matchingRules = await rules.getMatchingRules(
         files || [],
         event,
-        files.reduce((memo, { patch }) => (patch ? [...memo, patch] : memo), [] as string[])
+        files?.reduce((memo, { patch }) => (patch ? [...memo, patch] : memo), [] as string[])
       );
 
       debug('matchingRules:', matchingRules);
