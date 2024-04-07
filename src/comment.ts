@@ -1,5 +1,5 @@
 import groupBy from 'lodash.groupby';
-import table from 'markdown-table';
+import { markdownTable as table } from 'markdown-table';
 
 import { EMAIL_REGEX, USE_HERALD_ACTION_TAG_REGEX, LINE_BREAK, COMBINED_TAG_KEY, maxPerPage } from './util/constants';
 
