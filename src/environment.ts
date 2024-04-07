@@ -18,7 +18,7 @@ const environment = () =>
       }),
       TASK_ID: str({ default: 'use-herald-action' }),
     },
-    { dotEnvPath: null }
+    {}
   );
 
 export const env = environment();
